@@ -1,6 +1,6 @@
 {
-	"id" : "fences",
-	"version" : "1.0.0",
+	"id" : "Fences",
+	"version" : "0.1.0",
 	"displayName" : "Fence Pack",
 	"author" : "A'nW",
 	"description" :
