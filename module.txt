@@ -1,8 +1,9 @@
 {
 	"id" : "Fences",
 	"version" : "0.1.0",
-	"displayName" : "Fence Pack",
 	"author" : "A'nW",
-	"description" :
-	"A module adding fence blocks."
+	"displayName" : "Fence Pack",
+	"description" :	"A module adding fence blocks.",
+    "dependencies" : [],
+    "isServerSideOnly" : false
 }
