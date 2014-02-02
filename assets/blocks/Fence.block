@@ -15,7 +15,29 @@
  */
 
 {
-	"shadowCasting" : "false",
-	"rotation" : "Horizontal",
-	"shape" : "fences:fence"
+    "shadowCasting": "false",
+    "rotation": "Fences:fence",
+
+    "entity": {
+        "prefab": "Fences:Fence"
+    },
+
+    "no_connections": {
+        "shape": "Fences:fenceSinglePost"
+    },
+    "one_connection": {
+        "shape": "Fences:fenceEnd"
+    },
+    "line_connection": {
+        "shape": "Fences:fence"
+    },
+    "2d_corner": {
+        "shape": "Fences:fenceCorner"
+    },
+    "2d_t": {
+        "shape": "Fences:fenceTee"
+    },
+    "cross": {
+        "shape": "Fences:fenceCross"
+    }
 }
