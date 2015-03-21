@@ -18,7 +18,7 @@ package org.terasology.fences;
 import org.terasology.entitySystem.entity.EntityRef;
 import org.terasology.math.Side;
 import org.terasology.math.SideBitFlag;
-import org.terasology.math.Vector3i;
+import org.terasology.math.geom.Vector3i;
 import org.terasology.world.BlockEntityRegistry;
 import org.terasology.world.WorldProvider;
 import org.terasology.world.block.BlockComponent;
