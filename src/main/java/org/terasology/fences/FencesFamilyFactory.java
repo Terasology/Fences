@@ -29,9 +29,6 @@ import org.terasology.world.block.family.UpdatesWithNeighboursFamilyFactory;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * @author Marcin Sciesinski <marcins78@gmail.com>
- */
 @RegisterBlockFamilyFactory(value = "Fences:fence")
 public class FencesFamilyFactory extends UpdatesWithNeighboursFamilyFactory {
     private static final Map<String, Byte> FENCES_MAPPING =
