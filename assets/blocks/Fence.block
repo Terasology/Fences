@@ -39,5 +39,10 @@
     },
     "cross": {
         "shape": "Fences:fenceCross"
-    }
+    },
+
+    "3d_corner": {},
+    "3d_side": {},
+    "five_connections": {},
+    "all": {}
 }
