@@ -42,7 +42,7 @@ public class FencesFamily extends MultiConnectFamily {
 
     @Override
     public byte getConnectionSides() {
-        return 63;
+        return SideBitFlag.getSides(Side.LEFT, Side.RIGHT,Side.FRONT,Side.BACK);
     }
 
     @Override
