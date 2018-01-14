@@ -12,3 +12,12 @@ that the ground right around fence is severely darkened. This module also misses
 any sort of gate, although it used to have it in past.
 
 ![Fences showcase](readme-showcase.png)
+
+# Getting started
+
+If you want to start joking around with fences, you have currently one option:
+
+1) Press ``` ` ``` key to open console
+2) Type in `give fence`
+3) Place fences
+4) Enjoy!
