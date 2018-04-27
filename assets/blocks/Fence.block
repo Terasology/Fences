@@ -16,7 +16,7 @@
 
 {
     "shadowCasting": "false",
-    "rotation": "Fences:fence",
+    "family": "Fences:fence",
 
     "entity": {
         "prefab": "Fences:Fence"
