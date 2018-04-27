@@ -26,7 +26,7 @@ public class FencesFamily extends MultiConnectFamily {
         super(definition, blockBuilder);
 
         BlockUri blockUri = new BlockUri(definition.getUrn());
-        Block block = blockBuilder.constructSimpleBlock(definition);
+        Block block = blockBuilder.constructSimpleBlock(definition, blockUri, this);
 
         block.setBlockFamily(this);
         block.setUri(new BlockUri(blockUri,new Name(String.valueOf(0))));
