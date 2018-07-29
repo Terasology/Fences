@@ -1,3 +1,18 @@
+/*
+ * Copyright 2018 MovingBlocks
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package org.terasology.fences;
 
 import org.terasology.entitySystem.entity.EntityRef;
@@ -14,8 +29,8 @@ import org.terasology.world.block.family.*;
 import org.terasology.world.block.loader.BlockFamilyDefinition;
 import org.terasology.world.block.shapes.BlockShape;
 
-@RegisterBlockFamily("Fences:fence")
-@BlockSections({"no_connections", "one_connection", "line_connection", "2d_corner", "2d_t","cross"})
+@RegisterBlockFamily("fence")
+@BlockSections({"no_connections", "one_connection", "line_connection", "2d_corner", "2d_t", "cross"})
 public class FencesFamily extends MultiConnectFamily {
 
     public FencesFamily(BlockFamilyDefinition definition, BlockShape shape, BlockBuilderHelper blockBuilder) {
@@ -29,7 +44,7 @@ public class FencesFamily extends MultiConnectFamily {
         Block block = blockBuilder.constructSimpleBlock(definition, blockUri, this);
 
         block.setBlockFamily(this);
-        block.setUri(new BlockUri(blockUri,new Name(String.valueOf(0))));
+        block.setUri(new BlockUri(blockUri, new Name(String.valueOf(0))));
         this.blocks.put((byte) 0, block);
 
         this.registerBlock(blockUri, definition, blockBuilder, "no_connections", (byte) 0, Rotation.horizontalRotations());
@@ -42,7 +57,7 @@ public class FencesFamily extends MultiConnectFamily {
 
     @Override
     public byte getConnectionSides() {
-        return SideBitFlag.getSides(Side.LEFT, Side.RIGHT,Side.FRONT,Side.BACK);
+        return SideBitFlag.getSides(Side.LEFT, Side.RIGHT, Side.FRONT, Side.BACK);
     }
 
     @Override
@@ -64,7 +79,7 @@ public class FencesFamily extends MultiConnectFamily {
         EntityRef neighborEntity = blockEntityRegistry.getEntityAt(neighborLocation);
         BlockComponent blockComponent = neighborEntity.getComponent(BlockComponent.class);
 
-        return neighborEntity.hasComponent(ConnectsToFencesComponent.class)||
+        return neighborEntity.hasComponent(ConnectsToFencesComponent.class) ||
                 (blockComponent != null && blockComponent.getBlock().isFullSide(connectSide));
     }
 }
