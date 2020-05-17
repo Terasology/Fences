@@ -1,9 +1,10 @@
 {
-	"id" : "Fences",
-	"version" : "0.1.1-SNAPSHOT",
-	"author" : "A'nW",
-	"displayName" : "Fence Pack",
-	"description" :	"A module adding fence blocks.",
-    "dependencies" : [],
-    "isServerSideOnly" : false
+    "id": "Fences",
+    "version": "1.0.0",
+    "author": "A'nW",
+    "displayName": "Fence Pack",
+    "description": "A module adding fence blocks.",
+    "dependencies": [],
+    "isServerSideOnly": false,
+    "isAsset": true
 }
