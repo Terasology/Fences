@@ -15,6 +15,7 @@
  */
 package org.terasology.fences;
 
+import org.joml.Vector3ic;
 import org.terasology.entitySystem.entity.EntityRef;
 import org.terasology.math.Rotation;
 import org.terasology.math.Side;
@@ -81,5 +82,17 @@ public class FencesFamily extends MultiConnectFamily {
 
         return neighborEntity.hasComponent(ConnectsToFencesComponent.class) ||
                 (blockComponent != null && blockComponent.getBlock().isFullSide(connectSide));
+    }
+
+    @Override
+    protected boolean connectionCondition(Vector3ic blockLocation, Side connectSide) {
+        org.joml.Vector3i neighborLocation = new org.joml.Vector3i(blockLocation);
+        neighborLocation.add(connectSide.direction());
+
+        EntityRef neighborEntity = blockEntityRegistry.getEntityAt(neighborLocation);
+        BlockComponent blockComponent = neighborEntity.getComponent(BlockComponent.class);
+
+        return neighborEntity.hasComponent(ConnectsToFencesComponent.class) ||
+            (blockComponent != null && blockComponent.getBlock().isFullSide(connectSide));
     }
 }
