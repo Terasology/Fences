@@ -16,16 +16,18 @@
 package org.terasology.fences;
 
 import org.terasology.entitySystem.entity.EntityRef;
+import org.terasology.gestalt.naming.Name;
 import org.terasology.math.Rotation;
 import org.terasology.math.Side;
 import org.terasology.math.SideBitFlag;
 import org.terasology.math.geom.Vector3i;
-import org.terasology.naming.Name;
 import org.terasology.world.block.Block;
 import org.terasology.world.block.BlockBuilderHelper;
 import org.terasology.world.block.BlockComponent;
 import org.terasology.world.block.BlockUri;
-import org.terasology.world.block.family.*;
+import org.terasology.world.block.family.BlockSections;
+import org.terasology.world.block.family.MultiConnectFamily;
+import org.terasology.world.block.family.RegisterBlockFamily;
 import org.terasology.world.block.loader.BlockFamilyDefinition;
 import org.terasology.world.block.shapes.BlockShape;
 
