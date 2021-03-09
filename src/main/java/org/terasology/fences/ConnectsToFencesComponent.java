@@ -15,7 +15,7 @@
  */
 package org.terasology.fences;
 
-import org.terasology.entitySystem.Component;
+import org.terasology.engine.entitySystem.Component;
 
 public class ConnectsToFencesComponent implements Component {
 }
