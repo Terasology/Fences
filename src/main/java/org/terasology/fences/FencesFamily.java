@@ -16,7 +16,7 @@ import org.terasology.engine.world.block.family.MultiConnectFamily;
 import org.terasology.engine.world.block.family.RegisterBlockFamily;
 import org.terasology.engine.world.block.loader.BlockFamilyDefinition;
 import org.terasology.engine.world.block.shapes.BlockShape;
-import org.terasology.naming.Name;
+import org.terasology.gestalt.naming.Name;
 
 @RegisterBlockFamily("fence")
 @BlockSections({"no_connections", "one_connection", "line_connection", "2d_corner", "2d_t", "cross"})
